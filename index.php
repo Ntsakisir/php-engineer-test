@@ -11,6 +11,7 @@ use FlickerLeap\Diamond;
 use FlickerLeap\Rectangle;
 use FlickerLeap\Square;
 
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -47,6 +48,10 @@ use FlickerLeap\Square;
 
         <?php
             // output your diamond here
+
+            $diam = new Diamond;
+            echo $diam->draw();
+
         ?>
 
         <h2>Output your rectangle</h2>
