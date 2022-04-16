@@ -16,6 +16,8 @@ class Rectangle extends Shape
      *
      * @param int $length
      */
+    public $height = 10;
+
     public function __construct($length = 5) {
         $this->name = 'Rectangle';
         $this->sides = 4;
@@ -39,12 +41,12 @@ class Rectangle extends Shape
     {
         for ($i = 0; $i < $this->sideLength; $i++)
         {
-            for ($j = 0; $j < $this->sideLength; $j++) {
+            for ($j = 0; $j < $this->height; $j++) {
                 if ($i == 0
                     || $j == 0
                     || $i == $this->sideLength - 1
-                    || $j == $this->sideLength * 2 - 1) {
-                    echo $this->pixel; // TODO: Fix alignment at some point
+                    || $j == $this->height  - 1) {
+                    echo $this->pixel .$this->padding(2); // TODO: Fix alignment at some point
                 } else {
                     echo $this->padding(4);
                 }

@@ -48,7 +48,7 @@ use FlickerLeap\Square;
 
         <?php
             // output your diamond here
-
+            // Create an object from Diamond class
             $diam = new Diamond;
             echo $diam->draw();
 
@@ -58,6 +58,9 @@ use FlickerLeap\Square;
 
         <?php
             // output your working rectangle here
+            $rect = new Rectangle;
+            echo $rect->draw();
+
         ?>
 
         <h2>Output the result of the API</h2>
