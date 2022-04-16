@@ -27,6 +27,13 @@ class Square extends Shape
     /**
      *
      */
+
+     //This function allwos you to change the length value depending on your needs.
+    public function setPixels($length) 
+    { 
+        $this->sideLength = $length; 
+    }
+
     public function displayName()
     {
         echo $this->name;
